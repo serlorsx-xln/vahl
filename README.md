@@ -84,15 +84,15 @@ npm start
 | `npm run lint` | ESLint |
 | `npx tsc --noEmit` | Type check (`next build` does not lint, so run both) |
 
-`next.config.ts` allows one ngrok host as a dev origin for tunnel access.
+`next.config.ts` allows the author's ngrok tunnel as a dev origin (`allowedDevOrigins`). It only affects `next dev`; replace it with your own tunnel host or remove it.
 
 ### Tests
 
-There is no automated test suite in this repository. The build was checked with type checks, ESLint, the Impeccable design detector, and scripted headless-Chrome passes covering layout collisions and overflow, watch coverage per frame, contrast and form behaviour. Those scripts are not committed.
+There is no automated test suite in this repository. The build was checked with type checks, ESLint, a design-lint pass, and scripted headless-Chrome passes covering layout collisions and overflow, watch coverage per frame, contrast and form behaviour. Those scripts are not committed.
 
 ## Deploy
 
-No Dockerfile or `coolify.yaml` is included yet. The app needs no environment variables or backend, so any Node host works with `npm run build && npm start` (port 3000 by default), as does any platform that runs Next.js apps natively.
+There is no hosted demo yet; run it locally to see it. No Dockerfile or `coolify.yaml` is included. The app needs no environment variables or backend, so any Node host works with `npm run build && npm start` (port 3000 by default), as does any platform that runs Next.js apps natively.
 
 ## Security notes
 
@@ -114,9 +114,11 @@ src/lib/               story (scenes, progress, reduced-motion frames), director
                        DOM and theme), copy, time (Tromsø clock, sun, countdown), scroll, math
 PRODUCT.md             product brief: users, purpose, tone, anti-references
 DESIGN.md              the design system as built (colours, type, motion, named rules)
-.impeccable/           design.json (DESIGN.md sidecar) and the surface brief
+.impeccable/           design.json (DESIGN.md as tokens) and the page's design brief,
+                       used by the Impeccable design tooling
+AGENTS.md, CLAUDE.md   notes for AI coding agents: this is Next.js 16, read its bundled docs first
 ```
 
 ## License
 
-No license file is present in this repository; the package is marked `private`. All rights reserved by the repository owner unless stated otherwise.
+No license file is present in this repository; all rights are reserved by the repository owner. The source is public to read, but no permission to reuse or redistribute it is granted. (`"private": true` in `package.json` only stops it being published to npm.)
