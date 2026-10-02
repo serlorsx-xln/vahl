@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-02T07:25:58+00:00",
+  "title": "Design System: VAHL",
+  "extensions": {
+    "colorMeta": {
+      "frost": {
+        "role": "neutral",
+        "displayName": "Frosted German Silver",
+        "canonical": "--frost: 216 213 206 (r g b triplet on :root, used as rgb(var(--frost)))",
+        "oklch": "oklch(87.3% 0.010 87)",
+        "tonalRamp": [
+          "#0d0b07",
+          "#272520",
+          "#44423c",
+          "#64615b",
+          "#85827c",
+          "#a8a59e",
+          "#ccc9c2",
+          "#f1eee7"
+        ]
+      },
+      "frost-hi": {
+        "role": "neutral",
+        "displayName": "Frost Highlight",
+        "canonical": "--frost-hi: 232 229 222 (r g b triplet on :root, used as rgb(var(--frost-hi)))",
+        "oklch": "oklch(92.2% 0.010 87)",
+        "tonalRamp": [
+          "#0d0b07",
+          "#272520",
+          "#44423c",
+          "#64615b",
+          "#85827c",
+          "#a8a59e",
+          "#ccc9c2",
+          "#f1eee7"
+        ]
+      },
+      "frost-ink": {
+        "role": "neutral",
+        "displayName": "Frost Ink",
+        "canonical": "--frost-ink: 227 224 217 (r g b triplet on :root, used as rgb(var(--frost-ink)))",
+        "oklch": "oklch(90.7% 0.010 87)",
+        "tonalRamp": [
+          "#0d0b07",
+          "#272520",
+          "#44423c",
+          "#64615b",
+          "#85827c",
+          "#a8a59e",
+          "#ccc9c2",
+          "#f1eee7"
+        ]
+      },
+      "lacquer": {
+        "role": "neutral",
+        "displayName": "Lacquer",
+        "canonical": "--lacquer: 23 24 27 (r g b triplet on :root, used as rgb(var(--lacquer)))",
+        "oklch": "oklch(20.9% 0.006 271)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#242528",
+          "#414245",
+          "#606165",
+          "#818286",
+          "#a3a5a9",
+          "#c7c9cd",
+          "#edeef3"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Secondary Ink (day)",
+        "canonical": "--ink-2 day value 74 75 80; interpolated per frame to 160 163 170 by src/lib/director.ts",
+        "oklch": "oklch(41.4% 0.008 277)",
+        "tonalRamp": [
+          "#0a0b0f",
+          "#242529",
+          "#414247",
+          "#606166",
+          "#818287",
+          "#a3a5aa",
+          "#c7c9cf",
+          "#edeef4"
+        ]
+      },
+      "ink-2-night": {
+        "role": "neutral",
+        "displayName": "Secondary Ink (night)",
+        "canonical": "160 163 170 (director INK2_NIGHT; footer --ink-2)",
+        "oklch": "oklch(71.5% 0.011 267)",
+        "tonalRamp": [
+          "#090b10",
+          "#23252a",
+          "#3f4248",
+          "#5e6168",
+          "#7f8289",
+          "#a2a5ac",
+          "#c6c9d0",
+          "#ebeef6"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Polar Night",
+        "canonical": "--night: 13 17 24 (r g b triplet on :root, used as rgb(var(--night)))",
+        "oklch": "oklch(17.7% 0.016 262)",
+        "tonalRamp": [
+          "#080b12",
+          "#21252d",
+          "#3d424b",
+          "#5c616b",
+          "#7d838c",
+          "#a0a5af",
+          "#c3c9d4",
+          "#e9effa"
+        ]
+      },
+      "night-2": {
+        "role": "neutral",
+        "displayName": "Footer Night",
+        "canonical": "--night-2: 18 23 32 (r g b triplet on :root, used as rgb(var(--night-2)))",
+        "oklch": "oklch(20.4% 0.020 262)",
+        "tonalRamp": [
+          "#070b13",
+          "#20252f",
+          "#3c424d",
+          "#5b616d",
+          "#7c838f",
+          "#9ea5b2",
+          "#c2c9d6",
+          "#e7effc"
+        ]
+      },
+      "blued": {
+        "role": "primary",
+        "displayName": "Heat-Blued Steel",
+        "canonical": "--blued: 30 59 140 (r g b triplet on :root, used as rgb(var(--blued)))",
+        "oklch": "oklch(38.3% 0.139 265)",
+        "tonalRamp": [
+          "#02003c",
+          "#061a62",
+          "#1d3a8a",
+          "#3d5caa",
+          "#5f7fcb",
+          "#83a3eb",
+          "#a9c8ff",
+          "#d1eeff"
+        ]
+      },
+      "blued-hi": {
+        "role": "primary",
+        "displayName": "Lapped Blue Highlight",
+        "canonical": "--blued-hi: 70 108 214 (r g b triplet on :root, used as rgb(var(--blued-hi)))",
+        "oklch": "oklch(56.0% 0.168 266)",
+        "tonalRamp": [
+          "#03003f",
+          "#071767",
+          "#1d3790",
+          "#3658bc",
+          "#547be3",
+          "#78a0ff",
+          "#9fc6ff",
+          "#c6edff"
+        ]
+      },
+      "ruby": {
+        "role": "secondary",
+        "displayName": "Jewel Ruby",
+        "canonical": "--ruby: 179 20 47 (r g b triplet on :root, used as rgb(var(--ruby)))",
+        "oklch": "oklch(49.2% 0.188 21)",
+        "tonalRamp": [
+          "#340000",
+          "#5d0000",
+          "#870013",
+          "#b3152f",
+          "#d74b53",
+          "#fa7679",
+          "#ff9f9f",
+          "#ffc9c7"
+        ]
+      },
+      "ruby-lit": {
+        "role": "secondary",
+        "displayName": "Lit Ruby",
+        "canonical": "rgb(var(--ruby-lit)) = rgb(232 60 86) (caret, error, night current tick)",
+        "oklch": "oklch(62.1% 0.207 18)",
+        "tonalRamp": [
+          "#330000",
+          "#5c0002",
+          "#87001b",
+          "#b40e36",
+          "#e23853",
+          "#ff6777",
+          "#ff939d",
+          "#ffbec5"
+        ]
+      },
+      "gold-chaton": {
+        "role": "tertiary",
+        "displayName": "Chaton Gold",
+        "canonical": "#e2c27e, MeshStandardMaterial metalness 1 roughness 0.16 in src/components/three/materials.ts",
+        "oklch": "oklch(82.7% 0.094 85)",
+        "tonalRamp": [
+          "#150800",
+          "#332200",
+          "#533f0f",
+          "#755e2b",
+          "#997f46",
+          "#bea163",
+          "#e5c581",
+          "#ffebab"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Opening line and the mørketid horizon; engraved, hand-broken lines.",
+        "source": ".display + .d-tick / .d-night in src/app/globals.css"
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Chapter titles and the request title, engraved; range min(6.2vw,12vh) to min(10.6vw,20vh)."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "The parts counter, engraved, tabular."
+      },
+      "readout": {
+        "displayName": "Readout",
+        "purpose": "Instrument values: release count, solar elevation (44–46px, 30–34px on mobile)."
+      },
+      "title": {
+        "displayName": "Caption",
+        "purpose": "Disassembly captions, max 26ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading copy, 31–46ch measures, text-wrap pretty."
+      },
+      "specimen": {
+        "displayName": "Specimen",
+        "purpose": "Part names on specimen tags; spec line 13px beneath."
+      },
+      "label": {
+        "displayName": "Engraved Caps",
+        "purpose": "Engravings, field labels, clock, units, readout captions; 125% width, uppercase."
+      }
+    },
+    "shadows": [
+      {
+        "name": "engraving-lip",
+        "value": "text-shadow: var(--elx) var(--ely) 0 var(--lip)",
+        "purpose": "Light catch in a lacquer-filled cut; --lip is rgb(255 255 255 / 0.55) on frost, rgb(4 10 40 / 0.55) on blue, rgb(0 0 0 / 0.6) on night; --elx/--ely follow the cursor."
+      },
+      {
+        "name": "pressed-edge",
+        "value": "inset 0 -2px 0 rgb(0 0 0 / 0.22)",
+        "purpose": "Lower edge of the send button."
+      },
+      {
+        "name": "jewel-seat",
+        "value": "0 1px 2px rgb(0 0 0 / 0.35)",
+        "purpose": "Under the ruby dot."
+      },
+      {
+        "name": "focus-rule",
+        "value": "0 1px 0 0 rgb(var(--ink))",
+        "purpose": "Doubles an input's bottom rule on focus."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Entrances, hovers, bar tuck, GL fade-in."
+      },
+      {
+        "name": "ease-in",
+        "value": "cubic-bezier(0.7, 0, 0.84, 0)",
+        "purpose": "Exits: lines sinking back into their grooves, copy re-covering."
+      },
+      {
+        "name": "line-rise",
+        "value": "transform 1s ease-out, stagger 95ms per line",
+        "purpose": "Display lines rise from their own groove (overflow-clipped line)."
+      },
+      {
+        "name": "reticle-wipe",
+        "value": "clip-path inset 100%→0 + 14px rise, 0.95s ease-out, 0.12s delay",
+        "purpose": "Body copy uncovered top to bottom."
+      },
+      {
+        "name": "one-second-step",
+        "value": "steps(1, end) over 1s; minute track and counters quantised",
+        "purpose": "Anything representing time moves in discrete one-second steps."
+      },
+      {
+        "name": "temper-run",
+        "value": "clip-path circle(var(--tr) at var(--tx) var(--ty)), radius from scroll",
+        "purpose": "Blue field spreads from the remontoir with a straw/bronze/purple front, then a flat plate with one polish band at --sheen."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "curated rest frames per scene (src/lib/story.ts REST); opacity-only 0.2s",
+        "purpose": "Still story; no travel, no blur, no clip, bar never tucks."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "max-width: 760px",
+        "purpose": "Own composition: horizontal minute track, single caption, no loupe, watch rides up past the request top."
+      }
+    ],
+    "liveVariables": {
+      "source": "src/lib/director.ts, written per frame",
+      "vars": [
+        "--ground",
+        "--ink",
+        "--ink-2",
+        "--ui-ink",
+        "--ui-dark",
+        "--tx",
+        "--ty",
+        "--tr",
+        "--sheen",
+        "--lx",
+        "--ly",
+        "--lr",
+        "--lamp",
+        "--ride",
+        "--elx",
+        "--ely"
+      ]
+    },
+    "rasterProvenance": {
+      "rastersShipped": 0,
+      "note": "No raster images ship. Every texture (frost grain SVG turbulence, perlage, sunburst, environment maps) is generated in code; the only icon is src/app/icon.svg, hand-written SVG. There is no provenance to embed."
+    }
+  },
+  "components": [
+    {
+      "name": "Send Button",
+      "kind": "button",
+      "refersTo": "button-send",
+      "description": "The single conversion button: frost-ink plate, square, drawn tick that steps once a second while busy.",
+      "html": "<button class=\"ds-send\"><span>Send request</span><span class=\"ds-send-tick\" aria-hidden=\"true\"></span></button>",
+      "css": ".ds-send{display:inline-flex;align-items:center;gap:18px;padding:19px 26px 19px 28px;font-family:Archivo,system-ui,sans-serif;font-size:16px;font-weight:560;font-stretch:112%;letter-spacing:.01em;color:rgb(13 17 24);background:rgb(227 224 217);border:0;border-radius:0;box-shadow:inset 0 -2px 0 rgb(0 0 0 / .22);transition:background-color .28s cubic-bezier(.16,1,.3,1),color .28s cubic-bezier(.16,1,.3,1),transform .2s cubic-bezier(.16,1,.3,1);cursor:pointer}.ds-send:hover{background:rgb(70 108 214);color:#fff}.ds-send:active{transform:translateY(1px)}.ds-send:focus-visible{outline:1.5px solid rgb(150 178 255);outline-offset:5px}.ds-send-tick{position:relative;width:18px;height:1px;background:currentColor}.ds-send-tick::after{content:\"\";position:absolute;right:0;top:-4px;width:1px;height:9px;background:currentColor}"
+    },
+    {
+      "name": "Allocation CTA Link",
+      "kind": "button",
+      "refersTo": "link-cta",
+      "description": "Top-right link with drawn underline and days-to-close caps beneath.",
+      "html": "<a class=\"ds-cta\" href=\"#request\"><span class=\"ds-cta-t\">Request an allocation</span><span class=\"ds-caps\">closes in 55 days</span></a>",
+      "css": ".ds-cta{display:inline-flex;flex-direction:column;align-items:flex-end;gap:6px;padding:4px 0;text-decoration:none;color:rgb(23 24 27);font-family:Archivo,system-ui,sans-serif}.ds-cta-t{font-size:15px;line-height:1.1;font-weight:540;font-stretch:108%;padding-bottom:5px;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;transition:background-size .3s cubic-bezier(.16,1,.3,1),color .25s linear}.ds-cta:hover .ds-cta-t{color:rgb(30 59 140);background-size:100% 2px}.ds-cta:focus-visible{outline:1.5px solid rgb(30 59 140);outline-offset:5px}.ds-caps{font-size:10px;font-weight:560;font-stretch:125%;letter-spacing:.16em;text-transform:uppercase;color:rgb(23 24 27 / .7)}"
+    },
+    {
+      "name": "Line Field",
+      "kind": "input",
+      "refersTo": "input-line",
+      "description": "Engraved caps label, hint, a single bottom rule; lit ruby caret and error.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-l\">Name</span><span class=\"ds-field-h\">As it should appear on the letter</span><input class=\"ds-input\" type=\"text\"></label>",
+      "css": ".ds-field{display:grid;gap:8px;max-width:320px;font-family:Archivo,system-ui,sans-serif;color:rgb(227 224 217);background:rgb(13 17 24);padding:20px}.ds-field-l{font-size:11px;font-weight:560;font-stretch:125%;letter-spacing:.16em;text-transform:uppercase}.ds-field-h{font-size:13px;color:rgb(160 163 170);margin-top:-4px}.ds-input{font:inherit;font-size:18px;line-height:1.4;color:rgb(227 224 217);caret-color:rgb(232 60 86);background:transparent;border:0;border-bottom:1px solid rgb(227 224 217 / .4);border-radius:0;padding:8px 0 10px;transition:border-color .25s linear}.ds-input:hover{border-bottom-color:rgb(227 224 217 / .7)}.ds-input:focus-visible{outline:none;border-bottom-color:rgb(227 224 217);box-shadow:0 1px 0 0 rgb(227 224 217)}"
+    },
+    {
+      "name": "Minute Track",
+      "kind": "nav",
+      "refersTo": "minute-tick-now",
+      "description": "Sixty-tick progress rail and chapter nav; current minute in ruby; steps, never slides.",
+      "html": "<nav class=\"ds-track\" aria-label=\"Chapters\"><span class=\"ds-tk ds-tk5 ds-past\"></span><span class=\"ds-tk ds-past\"></span><span class=\"ds-tk ds-past\"></span><span class=\"ds-tk ds-now\"></span><span class=\"ds-tk\"></span><span class=\"ds-tk ds-tk5\"></span><span class=\"ds-tk\"></span><span class=\"ds-tk\"></span><a class=\"ds-track-a\" href=\"#\">Remontoir</a></nav>",
+      "css": ".ds-track{display:flex;flex-direction:column;gap:9px;padding:16px;background:rgb(216 213 206);font-family:Archivo,system-ui,sans-serif;color:rgb(23 24 27)}.ds-tk{width:6px;height:1px;background:rgb(23 24 27 / .26);transition:width .25s cubic-bezier(.16,1,.3,1)}.ds-tk5{width:11px;background:rgb(23 24 27 / .4)}.ds-past{background:rgb(23 24 27 / .8)}.ds-now{width:18px;height:2px;background:rgb(179 20 47)}.ds-track-a{margin-top:8px;font-size:11px;font-weight:560;font-stretch:125%;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:inherit;opacity:.55;transition:opacity .22s linear}.ds-track-a:hover,.ds-track-a:focus-visible{opacity:1}"
+    },
+    {
+      "name": "Specimen Tag",
+      "kind": "custom",
+      "refersTo": "specimen-tag",
+      "description": "Museum label for a part: number, name, spec, finish detail, under a 1px rule.",
+      "html": "<div class=\"ds-tag\"><span class=\"ds-tag-no\">Nº 08</span><span class=\"ds-tag-name\">Remontoir</span><span class=\"ds-tag-spec\">Constant force · lets go once a second</span><span class=\"ds-tag-detail\">Black-polished steel · 18 parts</span></div>",
+      "css": ".ds-tag{display:grid;grid-template-columns:52px 1fr;column-gap:10px;row-gap:1px;width:300px;padding-top:5px;border-top:1px solid rgb(23 24 27 / .4);font-family:Archivo,system-ui,sans-serif;color:rgb(23 24 27)}.ds-tag-no{grid-row:1/span 3;font-size:11px;font-weight:560;font-stretch:125%;letter-spacing:.08em;padding-top:3px;font-variant-numeric:tabular-nums}.ds-tag-name{font-size:15px;line-height:1.25;font-weight:560}.ds-tag-spec{font-size:13px;line-height:1.3;color:rgb(23 24 27 / .78)}.ds-tag-detail{grid-column:2;font-size:10.5px;line-height:1.4;font-weight:520;font-stretch:118%;letter-spacing:.1em;text-transform:uppercase;color:rgb(23 24 27 / .66);margin-top:2px}"
+    },
+    {
+      "name": "Engraved Headline",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Lacquer-filled display line with a one-pixel lip of light on frost.",
+      "html": "<p class=\"ds-engr\">Turn it<br>over.</p>",
+      "css": ".ds-engr{margin:0;padding:24px;background:rgb(216 213 206);font-family:Archivo,system-ui,sans-serif;font-size:72px;font-weight:290;font-stretch:112%;letter-spacing:-.035em;line-height:.86;color:rgb(23 24 27);text-shadow:0 1px 0 rgb(255 255 255 / .55)}"
+    },
+    {
+      "name": "Remontoir Meter",
+      "kind": "custom",
+      "refersTo": "readout",
+      "description": "Instrument readout on the blue field: winding bar, ruby release dot, tabular count.",
+      "html": "<div class=\"ds-meter\"><div class=\"ds-meter-row\"><span class=\"ds-caps2\">Winding</span><span class=\"ds-bar\"><span class=\"ds-fill\"></span></span><span class=\"ds-dot\"></span></div><p class=\"ds-count\"><span class=\"ds-n\">65</span><span class=\"ds-caps2\">times since you opened this page</span></p></div>",
+      "css": ".ds-meter{width:250px;padding:24px;background:rgb(30 59 140);color:rgb(227 224 217);font-family:Archivo,system-ui,sans-serif}.ds-meter-row{display:grid;grid-template-columns:78px 1fr 10px;align-items:center;gap:12px}.ds-caps2{font-size:11px;font-weight:560;font-stretch:125%;letter-spacing:.16em;text-transform:uppercase}.ds-bar{position:relative;height:1px;background:rgb(227 224 217 / .3)}.ds-fill{position:absolute;inset:-1px 30% -1px 0;background:rgb(227 224 217)}.ds-dot{width:7px;height:7px;border-radius:50%;background:rgb(179 20 47);box-shadow:0 1px 2px rgb(0 0 0 / .35)}.ds-count{display:flex;flex-direction:column;gap:6px;margin:20px 0 0}.ds-n{font-size:44px;line-height:1;font-weight:250;letter-spacing:-.03em;font-variant-numeric:tabular-nums lining-nums}.ds-count .ds-caps2{color:rgb(186 198 228)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Under the Loupe",
+    "overview": "The page is the movement's own metal, seen at bench distance. The ground is frosted German silver with blasting grain and a bench light falling from upper left; words are cut into it and filled with lacquer, so every large line carries a one-pixel lip of light on its lower edge that shifts with the cursor. One real-time movement (WebGL, procedural, no photography) owns the stage, and everything typographic is arranged around it as engraving, specimen labelling, or instrument readout.\n\nColour behaves like material, not decoration. The ground is a live value: it starts as frost, is overrun once by a field of heat-blued steel that spreads from the remontoir like a temper run on a hot plate, recedes, then darkens continuously to polar night before the request. Ruby means \"live\" and nothing else. Gold exists only where a watch has gold. The motion grammar is horological: the camera and the ground move continuously, while anything that represents time (the seconds hand, the minute track, counters, the send button's tick) moves in discrete one-second steps.\n\nDensity is low and exact. Copy sits in narrow measures at the gutter; numbers are tabular; dimensions are in millimetres. There are no cards, no panels, no rounded containers, no icon set.",
+    "keyCharacteristics": [
+      "Frosted silver ground with grain and an upper-left bench light; one live ground value driven by scroll.",
+      "Archivo on its width axis: light and slightly expanded for display, expanded caps for engraving.",
+      "Heat-blued steel is the single saturated field and fills whole viewports when it appears.",
+      "Ruby marks live state only; gold only on chatons and balance screws.",
+      "Square corners on every rectangle; circles only for things that are round in a watch.",
+      "Continuous camera, stepped time."
+    ],
+    "rules": [
+      {
+        "name": "The Live Ground Rule",
+        "body": "Ground, ink, secondary ink and interface ink are interpolated every frame (frost to night; lacquer to frost ink). New surfaces read `--ground`, `--ink`, `--ink-2` and `--ui-ink`, never a fixed neutral, so they darken with the story.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Blue Field Rule",
+        "body": "Heat-blued steel is either a fine line in the metal (hands, screws, hairspring) or the whole viewport. It is never a tinted card, a band, or a button at rest. The settled field is a flat plate, a little darker away from the lamp, crossed by one travelling polish band; the only radial structure is the temper front (straw, bronze, purple, blue) while it spreads.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ruby Means Live Rule",
+        "body": "Ruby appears only where something is happening now: the current minute, a release, the power path, the caret, an error. Use ruby on light grounds and lit ruby on dark ones.",
+        "section": "colors"
+      },
+      {
+        "name": "The Gold Where Gold Is Rule",
+        "body": "Gold belongs to chatons and balance screws in the 3D movement. It never appears as a UI colour, a rule, or a highlight. The train wheels are German silver.",
+        "section": "colors"
+      },
+      {
+        "name": "The Engraved Rule",
+        "body": "Display, headline and the large numeral are lacquer-filled cuts: ink colour plus a zero-blur one-pixel lip (`--lip`) offset by the cursor-driven `--elx/--ely`. The lip is light on frost and dark on blue or night. It is a property of the material, not a drop shadow.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Every number that counts, measures or tells time is tabular and lining. Dimensions are written in mm with real values.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Plate Rule",
+        "body": "Nothing in the interface floats. If a surface needs separation, it gets a 1px rule in ink at reduced alpha, not a shadow or a fill.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** read `--ground`, `--ink`, `--ink-2` and `--ui-ink` for any new surface so it darkens with the story.",
+      "**Do** engrave large type: ink plus the one-pixel cursor-driven lip, never a blurred shadow.",
+      "**Do** move anything that represents time in whole one-second steps; let only the camera and the ground glide.",
+      "**Do** label parts as specimens: number, name, real dimension in mm, finish.",
+      "**Do** separate with 1px rules at reduced alpha and keep every rectangle square.",
+      "**Do** give mobile and reduced motion their own compositions, not a scaled or frozen desktop."
+    ],
+    "donts": [
+      "**Don't** use heat-blued steel as a tinted panel, badge or resting button fill; it is a line in the metal or the whole viewport.",
+      "**Don't** use ruby for emphasis, branding or decoration; it marks only what is live.",
+      "**Don't** put gold in the interface or on parts that are not chatons or balance screws.",
+      "**Don't** add cards, rounded containers, floating shadows or an icon set; draw marks as 1px lines.",
+      "**Don't** centre the hero or the copy; anchor words to the gutter and let the watch bleed off the right."
+    ]
+  }
+}
